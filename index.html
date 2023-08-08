@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Address Page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Address Form</h1>
+       
+        <form id="address-form" style="display: grid;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="fName"  required placeholder="Enter Name">
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode"  maxlength="6" required placeholder="Enter Pincode">
+
+            <label for="city">City:</label>
+            <select id="city" disabled>
+                <option value="" disabled selected>Select City</option>
+               
+            </select>
+
+            <label for="state">State:</label>
+            <select id="state" disabled>
+                <option value="" disabled selected>Select State</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="address-card" style="display: none;">
+            <h2>User Address</h2>
+            <p><strong>Name:</strong> <span id="card-name"></span></p>
+            <p><strong>Address:</strong> <span id="card-address"></span></p>
+            <p><strong>City:</strong> <span id="card-city"></span></p>
+            <p><strong>State:</strong> <span id="card-state"></span></p>
+        </div>
+    </div>
+    
+   <script src="/script.js"></script>
+</body>
+</html>
